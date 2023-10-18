@@ -1,0 +1,22 @@
+Explanation
+
+DesignPrize/Classes_Functions
+-Setting.py creates a Setting object which should represent the environment created in which the simulation takes place, it plots two density plots if desired and has to be
+	called once for initialization, then starting conditions can be set, then run() has to be called to start the calculations (using SOR) of the produced gradients.
+ 
+-Electrons.py creates a group of electrons representing all the electrons inside the already existing Setting which initially can be added after initialization
+	by calling the function addParticles("amount of electrons desired). Calling the method move() then simulates the movement of all added electrons according to the given Setting.
+	It plots multipe diagrams for visualization of the simulation like histograms of electrons hitting the wall, paths electrons took and others.
+
+-Output.py can be used to safe results of a given simulation inside a .txt file.
+
+
+DesignPrize/Runner
+-tweezer.py, dome.py, points.py and plates.py are the actual scripts which include all the above mentioned steps. Mostly setting the starting condition for a given Setting and
+	calling all other needed function. Each file has multiple attempts/variants of implementing a given "idea" or "concept" which should be represented in some way by the
+	files name. Normally results in 4 plots (setting,hist,paths,tof)
+	Before using the import path has to be adjusted, aswell as the path to the output file.
+
+DesignPrize/process_plots
+-folders with function names and amount of electrons. Contain saved plots for working designs. There are entries to each of these accordingly in the output_file.txt file.
+	"other" contains random plots I thought showed pretty well the purpose of some of the diagrams.
